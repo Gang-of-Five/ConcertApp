@@ -11,25 +11,25 @@ public class Media {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long mediaid;
 
-    @Column(nullable = false, name = "type")
+    @Column(nullable = false, name = "type", length = 10)
     private String type;
 
     @Column(nullable = false, name = "url", unique = true)
     private String url;
 
-    @Column(nullable = false, name = "userid")
-    private Long userid;
+    @ManyToOne(optional = false)
+    @JoinColumn(name="userid", referencedColumnName = "userid")
+    private User user;
 
-    @Column(nullable = false, name = "concertid")
-    private Long concertid;
+    @ManyToOne(optional = false)
+    @JoinColumn(name="concertid", referencedColumnName = "concertid")
+    private Concert concert;
 
     public Media(){}
 
-    public Media(String type, String url, Long userid, Long concertid) {
+    public Media(String type, String url) {
         this.type = type;
         this.url = url;
-        this.userid = userid;
-        this.concertid = concertid;
     }
 
     public Long getMediaid() {
@@ -54,21 +54,5 @@ public class Media {
 
     public void setUrl(String url) {
         this.url = url;
-    }
-
-    public Long getUserid() {
-        return userid;
-    }
-
-    public void setUserid(Long userid) {
-        this.userid = userid;
-    }
-
-    public Long getConcertid() {
-        return concertid;
-    }
-
-    public void setConcertid(Long concertid) {
-        this.concertid = concertid;
     }
 }

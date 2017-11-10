@@ -13,23 +13,24 @@ public class Comment {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long commentid;
 
-    @Column(nullable = false, name = "userid")
-    private Long userid;
-
-    @Column(nullable = false, name = "concertid")
-    private Long concertid;
-
     @Column(nullable = false, name = "text")
     private String text;
 
     @Column(nullable = false, name = "date")
     private Date date;
 
+    @ManyToOne(optional = false)
+    @JoinColumn(name="userid", referencedColumnName = "userid")
+    private User user;
+
+    @ManyToOne(optional = false)
+    @JoinColumn(name="concertid", referencedColumnName = "concertid")
+    private Concert concert;
+
+
     public Comment(){}
 
-    public Comment(Long userid, Long concertid, String text, Date date) {
-        this.userid = userid;
-        this.concertid = concertid;
+    public Comment( String text, Date date) {
         this.text = text;
         this.date = date;
     }
@@ -40,22 +41,6 @@ public class Comment {
 
     public void setCommentid(Long commentid) {
         this.commentid = commentid;
-    }
-
-    public Long getUserid() {
-        return userid;
-    }
-
-    public void setUserid(Long userid) {
-        this.userid = userid;
-    }
-
-    public Long getConcertid() {
-        return concertid;
-    }
-
-    public void setConcertid(Long concertid) {
-        this.concertid = concertid;
     }
 
     public String getText() {

@@ -2,6 +2,7 @@ package com.concertApp.gangOfFive.Domain;
 
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Table (name = "band")
@@ -11,13 +12,17 @@ public class Band {
     @GeneratedValue (strategy = GenerationType.AUTO)
     private Long bandid;
 
-    @Column(nullable = false, name = "bandname", unique = true)
+    @Column(nullable = false, name = "bandname", unique = true, length = 50)
     private String bandname;
+
+    @ManyToMany(mappedBy = "bands")
+    private Set<Concert> concerts;
 
     public Band() {}
 
-    public Band(String bandname) {
+    public Band(String bandname, Set concerts) {
         this.bandname = bandname;
+        this.concerts = concerts;
     }
 
     public Long getBandid() {

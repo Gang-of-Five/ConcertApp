@@ -10,10 +10,10 @@ public class Venue {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long venueid;
 
-    @Column(nullable = false, name = "venuename")
+    @Column(nullable = false, name = "venuename", length = 50)
     private String venuename;
 
-    @Column(name = "venueaddress")
+    @Column(name = "venueaddress", length = 100)
     private String venueaddress;
 
     public Venue() {
