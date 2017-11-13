@@ -11,7 +11,7 @@ public class HomeController {
 
     @GetMapping("/")
     public String home(Model model) {
-        logger.info("Into the main page controller");
+        logger.info("Into the Home page controller");
 
         return "index";
     }

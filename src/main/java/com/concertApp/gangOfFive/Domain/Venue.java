@@ -1,6 +1,7 @@
 package com.concertApp.gangOfFive.Domain;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table (name = "venue")
@@ -15,6 +16,9 @@ public class Venue {
 
     @Column(name = "venueaddress", length = 100)
     private String venueaddress;
+
+    @OneToMany(mappedBy = "venue", targetEntity = Concert.class)
+    private List<Concert> concerts;
 
     public Venue() {
     }

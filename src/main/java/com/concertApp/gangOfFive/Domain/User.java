@@ -21,7 +21,7 @@ public class User {
     @Column(nullable = false, name = "username", unique = true, length = 15)
     private String username;
 
-    @Column(nullable = false, name = "bio")
+    @Column(nullable = true, name = "bio")
     private String bio;
 
     @ManyToMany(cascade = CascadeType.ALL)

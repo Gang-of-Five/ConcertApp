@@ -27,7 +27,6 @@ public class Comment {
     @JoinColumn(name="concertid", referencedColumnName = "concertid")
     private Concert concert;
 
-
     public Comment(){}
 
     public Comment( String text, Date date) {

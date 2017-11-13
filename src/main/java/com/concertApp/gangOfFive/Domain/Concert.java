@@ -22,8 +22,9 @@ public class Concert {
     @Column(nullable = false, name = "title", length = 100)
     private String title;
 
-    @Column(nullable = false, name = "venue", length = 50)
-    private  String venue;
+    @ManyToOne(optional = false)
+    @JoinColumn(name="venueid", referencedColumnName = "venueid")
+    private Venue venue;
 
     @ManyToMany(mappedBy = "concerts")
     private Set<User> users;
@@ -42,7 +43,7 @@ public class Concert {
 
     public Concert (){}
 
-    public Concert(Date datestart, Date dateend, String title, String venue, Set users, Set bands) {
+    public Concert(Date datestart, Date dateend, String title, Venue venue, Set users, Set bands) {
         this.datestart = datestart;
         this.dateend = dateend;
         this.title = title;
@@ -83,11 +84,11 @@ public class Concert {
         this.title = title;
     }
 
-    public String getVenue() {
+    public Venue getVenue() {
         return venue;
     }
 
-    public void setVenue(String venue) {
+    public void setVenue(Venue venue) {
         this.venue = venue;
     }
 
