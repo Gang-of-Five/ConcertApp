@@ -30,7 +30,7 @@
                         </a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contact">
+                        <a class="nav-link js-scroll-trigger" href="/home/insertUser">
                            <span class='line_wrap goldLine_wrap'><span class='line goldLine'></span>Sign up (free)</span>
                         </a>
                      </li>
