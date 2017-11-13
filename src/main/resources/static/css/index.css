@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	width:100%;
+	margin:0;
+	padding:0;
+	min-height:100%;
+	font-family: 'Amaranth', sans-serif;
+}
+
+h1{
+	font-size:4.5rem;
+}
+
+#main_navigation{
+	width:100%;
+	padding:0;
+	margin:0;
+	background:#2d3e50;
+}
+
+#logo{
+	color:white;
+	padding-bottom:30px;
+	padding-top:30px;
+	font-weight:bold;
+	font-size:30px;
+	padding-left:10px;
+}
+
+#main_navigation_list{
+	font-size:22px;
+}
+
+span.line_wrap {
+    position:relative;
+    display:inline-block; 
+	color:white;       
+}
+span.goldLine_wrap{
+	color:gold; 
+}
+span.line {
+    display:inline-block;
+    position:absolute;
+    left:0;
+    top:50%;
+    width:0;
+    border-top:3px solid white;
+	color:white;
+    -webkit-transition: width 0.5s ease-in;
+}
+span.goldLine{
+	border-top:3px solid gold;
+	color:gold;
+}
+span.line_wrap:hover span.line {
+    width:100%;    
+}
+
+#wall{
+	background:url(../res/images/wall_bcg_ps.jpg);
+	background-size:100% 100%;
+	height:1000px;
+}
+
+#jumbotron_wrapper{
+	padding-top:150px;
+	color:whitesmoke;
+}
+
+.jumbotron p{
+	font-size:1.2rem;
+}
+
+#add_concert_btn{
+	font-size:1.4rem;
+	padding:10px;
+	transition:all ease-in-out .5s;
+}
+
+#add_concert_btn:hover{
+	cursor:pointer;
+}
+
+
