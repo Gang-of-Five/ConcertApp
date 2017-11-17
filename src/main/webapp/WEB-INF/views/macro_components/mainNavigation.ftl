@@ -11,7 +11,7 @@
                   <ul class="navbar-nav ml-auto" id="main_navigation_list">
                      <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#portfolio">
-                           <span class='line_wrap'><span class='line'></span>Browse</span>
+                           <span class='line_wrap'><span class='line'></span>Browse Collection</span>
                         </a>
                      </li>
                      <li class="nav-item">
