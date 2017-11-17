@@ -72,6 +72,7 @@ span.line_wrap:hover span.line {
 
 .jumbotron p{
 	font-size:1.2rem;
+	transition: height 0.8s;
 }
 
 #add_concert_btn{

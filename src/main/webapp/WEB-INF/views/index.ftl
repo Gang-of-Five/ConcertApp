@@ -27,7 +27,7 @@
       <!-- Textillate javascript -->
       <script src="/vendor/textillate/assets/jquery.lettering.js" defer></script>
       <!-- <script src="vendor/textillate/assets/jquery.fittext.js" defer></script> -->
-      <script src="/vendor/textillate/assets/jquery.textillate.js" defer></script>
+      <script src="/vendor/textillate/jquery.textillate.js" defer></script>
 
       <!-- Contact Form JavaScript -->
       <script src="/js/jqBootstrapValidation.js" defer></script>
@@ -45,17 +45,13 @@
          <div class="row" id="jumbotron_wrapper">
             <div class="col-lg-4"></div>
             <div class="col-lg-4 jumbotron text-center" style="background:none;">
-               <h1 class="tlt1">
-                   Concert App by <br>
-                   <i>Gang Of Five.</i>
-               </h1>
+               <h1 class="tlt1Fade">Concert App by Gang Of Five.</h1>
                <br>
-               <p>
+               <p id="jumbText" class="collapse">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Nulla vestibulum ex pretium elit facilisis, sit amet venenatis erat facilisis.
-                  Aliquam congue sem dui, vitae egestas diam posuere id.
-                  Cras congue tellus vel rutrum porta. Quisque congue eu metus et dictum.
-                  Etiam nec sapien ut odio eleifend rutrum vel vel ante.
+                  Aliquam congue sem dui, vitae egestas diam posuere id.Cras congue tellus vel rutrum porta.
+                  Quisque congue eu metus et dictum. Etiam nec sapien ut odio eleifend rutrum vel vel ante.
                </p>
                <br>
                <a class="btn btn-success" id="add_concert_btn">
