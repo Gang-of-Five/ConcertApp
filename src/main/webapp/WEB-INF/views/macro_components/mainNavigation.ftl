@@ -1,6 +1,6 @@
 <#macro mainNavigation>
          <nav id="main_navigation" class="navbar navbar-expand-lg navbar-light fixed-top">
-            <div id="main_navbar_wrapper" class="container-fluid">
+            <div id="main_navbar_wrapper" class="container">
                <a id="logo" class="navbar-brand js-scroll-trigger" href="#page-top">Concert App</a>
                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="color:white">
