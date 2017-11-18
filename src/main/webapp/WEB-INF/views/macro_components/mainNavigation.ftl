@@ -15,7 +15,7 @@
                         </a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">
+                        <a class="nav-link js-scroll-trigger" href="#aboutUs">
                            <span class='line_wrap'><span class='line'></span>About</span>
                         </a>
                      </li>

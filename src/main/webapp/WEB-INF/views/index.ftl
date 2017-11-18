@@ -91,6 +91,22 @@
             <div class="col-xs-0 col-lg-2"></div>
          </div>
       </section>
+      <section id="services" class="container-fluid">
+          <div class="row">
+              <div class="col-xs-6 col-lg-4">
+                  <p class="lightgrey" id="aboutUsText">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nulla vestibulum ex pretium elit facilisis, sit amet venenatis erat facilisis.
+                      Aliquam congue sem dui, vitae egestas diam posuere id.Cras congue tellus vel rutrum porta.
+                      Quisque congue eu metus et dictum. Etiam nec sapien ut odio eleifend rutrum vel vel ante.
+                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                      Proin vitae rhoncus erat.
+                      <br>
+                  </p>
+              </div>
+              <div class="col-xs-6 col-lg-8">
+              </div>
+          </div>
+      </section>
    </body>
-
 </html>
