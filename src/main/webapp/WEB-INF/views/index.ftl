@@ -62,11 +62,33 @@
          </div>
       </section>
 
-      <section id="services" class="container-fluid">
+      <section id="aboutUs" class="container-fluid">
          <div class="row">
-            <div class="col-xs-12 col-lg-4">
+            <div class="col-xs-0 col-lg-2">
             </div>
-            <div class="col-xs-12 col-lg-8"></div>
+            <div class="col-xs-12 col-lg-8 text-center">
+               <br>
+               <h2>
+                  <span style="color:darkgrey">ABOUT</span>
+                  <span class="lightgrey">US</span>
+               </h2>
+               <p class="lightgrey" id="aboutUsText">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nulla vestibulum ex pretium elit facilisis, sit amet venenatis erat facilisis.
+                  Aliquam congue sem dui, vitae egestas diam posuere id.Cras congue tellus vel rutrum porta.
+                  Quisque congue eu metus et dictum. Etiam nec sapien ut odio eleifend rutrum vel vel ante.
+                   Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                   Proin vitae rhoncus erat.
+                   Morbi quam augue, condimentum a lorem eu, lobortis molestie metus.
+                   Etiam nec sapien ut odio eleifend rutrum vel vel ante.
+                   Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                   Proin vitae rhoncus erat.
+                   Morbi quam augue, condimentum a lorem eu, lobortis molestie metus.
+                   <br>
+               </p>
+                <br>
+            </div>
+            <div class="col-xs-0 col-lg-2"></div>
          </div>
       </section>
    </body>

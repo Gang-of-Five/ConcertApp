@@ -9,8 +9,20 @@ body{
 	font-family: 'Amaranth', sans-serif;
 }
 
+.lightgrey{
+   color:lightgrey;
+}
+
+#aboutUsText{
+  padding-top:15px;
+}
+
 h1{
 	font-size:4.5rem;
+}
+
+h2{
+    padding-top:50px;
 }
 
 #main_navigation{
