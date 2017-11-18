@@ -93,8 +93,8 @@
       </section>
       <section id="services" class="container-fluid">
           <div class="row">
-              <div class="col-xs-6 col-lg-4">
-                  <p class="lightgrey" id="aboutUsText">
+              <div class="col-xs-6 col-lg-4 text-center">
+                  <p class="lightgrey" id="servicesText">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Nulla vestibulum ex pretium elit facilisis, sit amet venenatis erat facilisis.
                       Aliquam congue sem dui, vitae egestas diam posuere id.Cras congue tellus vel rutrum porta.
@@ -104,7 +104,13 @@
                       <br>
                   </p>
               </div>
-              <div class="col-xs-6 col-lg-8">
+              <div class="col-xs-6 col-lg-8 text-center">
+                  <p class="lightgrey" id="servicesList">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nulla vestibulum ex pretium elit facilisis, sit amet venenatis erat facilisis.
+                      Aliquam congue sem dui, vitae egestas diam posuere id.
+                      <br>
+                  </p>
               </div>
           </div>
       </section>
